@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , initial-scale=1.0, maximun-scale=1.0, maximun-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Tareas</title>
+</head>
+
+<body>
+
+    <h1>Listado de Tareas</h1>
+
+    <div class="datos">
+        <p id="total">Total tareas: 0</p>
+        <p id="completadas">Tareas Completadas: 0</p>
+    </div>
+
+    <div class="contenedor">
+
+        <form class="formulario" id="formulario">
+            <h4>FORMULARIO</h4>
+            <input type="text" id="tarea">
+            <input type="submit" value="Agregar">
+        </form>
+
+        <div class="tareas" id="tareas">
+            <div class="item-tarea">
+                <p>Tarea 1</p>
+                <div class="botones">
+                    <button class="eliminar" data-id="${item.id}">x</button>
+                    <button class="completada" data-id="${item.id}">?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/function.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
